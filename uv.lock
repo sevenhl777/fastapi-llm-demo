@@ -301,12 +301,16 @@ source = { editable = "." }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
     { name = "openai" },
+    { name = "pydantic-settings" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "fastapi", extras = ["standard"], specifier = ">=0.163.1" },
     { name = "openai", specifier = ">=3.52.0" },
+    { name = "pydantic-settings", specifier = ">=2.16.3" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
 ]
 
 [[package]]
